@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		recursive r = new recursive();
+		iterative i = new iterative();
+		outputTable o = new outputTable();
+		
+		Scanner sc = new Scanner(System.in);
+		
+		
+	}
+}
