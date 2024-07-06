@@ -18,9 +18,9 @@
  * 
  */
 public class recursive {
+
 	public void recur(int n, int i, int j) {
 		//Pass in n, i, and j to the recur method 
-		
 		if (i > n) {
 			//If i is greater than n, return
             return;
@@ -30,7 +30,6 @@ public class recursive {
             System.out.println();
             recur(n, i + 1, 1);
             //Increment i by 1 and set j to 1
-            
             return;
         }
         System.out.printf("%4d", i * j);

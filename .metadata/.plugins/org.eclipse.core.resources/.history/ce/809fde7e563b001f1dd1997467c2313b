@@ -28,9 +28,9 @@ public class recursive {
         if (j > 10) {
         	//If j is greater than 10, print a new line and call recur again
             System.out.println();
+            System.out.print(i + " | ");
             recur(n, i + 1, 1);
             //Increment i by 1 and set j to 1
-            
             return;
         }
         System.out.printf("%4d", i * j);

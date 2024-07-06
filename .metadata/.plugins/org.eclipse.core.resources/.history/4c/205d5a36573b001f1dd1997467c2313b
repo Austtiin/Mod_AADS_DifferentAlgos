@@ -20,7 +20,7 @@
 public class recursive {
 	public void recur(int n, int i, int j) {
 		//Pass in n, i, and j to the recur method 
-		
+		System.out.print(" | ");
 		if (i > n) {
 			//If i is greater than n, return
             return;

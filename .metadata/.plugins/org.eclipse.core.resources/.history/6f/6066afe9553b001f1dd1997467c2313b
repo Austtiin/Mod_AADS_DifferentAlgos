@@ -18,23 +18,18 @@
  * 
  */
 public class recursive {
+
 	public void recur(int n, int i, int j) {
-		//Pass in n, i, and j to the recur method 
-		
 		if (i > n) {
-			//If i is greater than n, return
             return;
         }
         if (j > 10) {
-        	//If j is greater than 10, print a new line and call recur again
             System.out.println();
-            recur(n, i + 1, 1);
-            //Increment i by 1 and set j to 1
-            
+            recursive(n, i + 1, 1);
             return;
         }
         System.out.printf("%4d", i * j);
-        recur(n, i, j + 1);
+        recursive(n, i, j + 1);
 	}
 
 }
