@@ -2,6 +2,7 @@
 /*
  * Main.java
  * class to run the solution
+ * 
  * Austin Stephens
  * 07/05/2024
  * Rasmussen University
@@ -25,21 +26,19 @@ public class Main {
 		recursive r = new recursive();
 		iterative i = new iterative();
 		outputTable o = new outputTable();
-		
+
 		Scanner sc = new Scanner(System.in);
-		
+
 		System.out.print("Enter the number of terms: ");
 		int n = sc.nextInt();
+
+		System.out.println("Iterative Approach: ");
+		o.output(i, n);
 		
 		System.out.println("Recursive Approach: ");
 		o.output(r, n);
 		
-		System.out.println("Iterative Approach: ");
-		o.output(i, n);
-		
-		sc.close
-		
-		
-		
+		System.out.println("Completed");
+		sc.close();
 	}
 }

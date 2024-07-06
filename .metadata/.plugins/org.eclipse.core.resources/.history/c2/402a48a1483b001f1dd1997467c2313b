@@ -1,0 +1,38 @@
+/*
+ * iterative.java
+ * class to calculate the multiplication table iteratively
+ * 
+ * Austin Stephens
+ * 07/05/2024
+ * Rasmussen University
+ * Professor Kumar
+ * COT4530C Section 01 Algorithm and Data Structure Analysis
+ * 
+ * Write a Java program that outputs a multiplication table for numbers between 1 and 10. 
+ * The value k for a specific run should be solicited from the user. 
+ * Implement both the iterative and recursive approaches. 
+ * Perform a test on the two algorithms using a low bound of k =1, 
+ * median k = 5, and upper bound k = 10, 20, 50, and 100. and report on your 
+ * performance (milliseconds) findings on these two algorithms 
+ * (iterative and recursive).
+ * 
+ */
+
+public class iterative {
+	public int iter(int n) {
+		int a = 0, b = 1, c = 0;
+		if (n == 0) {
+			return a;
+		}
+		for (int i = 2; i <= n; i++) {
+			c = a + b;
+			a = b;
+			b = c;
+		}
+		return b;
+	}
+
+	public int fib(int n) {
+		return 0;
+	}
+}
