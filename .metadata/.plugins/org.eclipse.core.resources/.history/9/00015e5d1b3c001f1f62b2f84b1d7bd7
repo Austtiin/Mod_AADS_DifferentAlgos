@@ -29,26 +29,17 @@ public class Main {
 		recursive r = new recursive();
 		iterative i = new iterative();
 		outputTable o = new outputTable();
-		//Start the classes for recursive, iterative, and outputTable
 
 		Scanner sc = new Scanner(System.in);
-		//New scanner object to get user input
-		
+
 		System.out.print("Enter the number of terms: ");
 		int n = sc.nextInt();
-		//Get the number of terms from the user
 
 		System.out.println("Iterative Approach: ");
 		o.output(i, n);
-		//Output the multiplication table using the iterative approach
-		//Pass in the iterative object and the number of terms
-		//We just created the iterative object above in the outputTable class
 		
 		System.out.println("Recursive Approach: ");
 		o.output(r, n);
-		//Output the multiplication table using the recursive approach
-		//Pass in the recursive object and the number of terms
-		//We just created the recursive object above in the outputTable class
 		
 		System.out.println("Completed");
 		sc.close();

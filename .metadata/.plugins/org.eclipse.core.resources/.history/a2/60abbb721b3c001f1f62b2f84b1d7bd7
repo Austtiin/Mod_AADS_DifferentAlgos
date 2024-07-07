@@ -27,8 +27,6 @@ public class outputTable {
 		long startTime = System.nanoTime();
 		i.iter(n);
 		//Start iteration from 1 to n
-		//Pass in the number of terms
-		
 		long endTime = System.nanoTime();
 		long duration = (endTime - startTime) / 1000000;
 		System.out.println("Duration: " + duration + " milliseconds");
@@ -42,7 +40,6 @@ public class outputTable {
         
         r.recur(n, 1, 1);
         //Start recursion from 1 to n
-        //Pass in the number of terms, the current row, and the current column
         
         long endTime = System.nanoTime();
         long duration = (endTime - startTime) / 1000000;
